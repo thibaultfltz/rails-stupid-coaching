@@ -1,0 +1,13 @@
+
+<div class="container">
+  <div class="ask">
+    <h1><%= params[:input].capitalize %></h1>
+    <p> -- you </p>
+  </div>
+  <div class="answer">
+    <h1> <%= @result %></h1>
+    <p> -- the coach </p>
+  </div>
+  <div class="callback"><%= link_to 'Ask the coach something else!', ask_path%>
+  </div>
+</div>
